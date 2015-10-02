@@ -17,3 +17,5 @@ include 'services:webservice'
 */
 
 rootProject.name = 'microservices'
+include 'infrastructure'
+
