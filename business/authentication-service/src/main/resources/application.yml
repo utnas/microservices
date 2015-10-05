@@ -12,7 +12,7 @@ endpoints:
 zuul:
   ignoredServices: "*"
   routes:
-    productcomposite:
+    authentication-service:
       path: /authentication-service/**
 #      stripPrefix: false
 

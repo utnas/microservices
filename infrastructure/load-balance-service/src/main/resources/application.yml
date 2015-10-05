@@ -12,7 +12,7 @@ endpoints:
 zuul:
   ignoredServices: "*"
   routes:
-    productcomposite:
+    load-balance-service:
       path: /load-balance-service/**
 #      stripPrefix: false
 
