@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: asm:asm-all:3.2">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/asm/asm-all/3.2/asm-all-3.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

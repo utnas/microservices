@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: com.netflix.rxnetty:rx-netty-contexts:0.3.17">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/netflix/rxnetty/rx-netty-contexts/0.3.17/rx-netty-contexts-0.3.17.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
