@@ -1,6 +1,6 @@
 spring:
   application:
-    name: authentication-server
+    name: Authentication-Service
   cloud:
     config:
       uri: ${vcap.services.${PREFIX:}configserver.credentials.uri:http://user:password@localhost:8811}

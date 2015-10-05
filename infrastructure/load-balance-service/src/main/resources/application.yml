@@ -1,5 +1,5 @@
 info:
-  component: Zuul Load banlance Server
+  component: Load-Balance-Service
 
 endpoints:
   restart:
@@ -13,7 +13,7 @@ zuul:
   ignoredServices: "*"
   routes:
     productcomposite:
-      path: /productcomposite/**
+      path: /load-balance-service/**
 #      stripPrefix: false
 
 server:

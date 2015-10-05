@@ -2,7 +2,7 @@ server:
   port: 8761
 security:
   user:
-    password: ${eureka.password} # Don't use a default password in a real app
+    password: ${discovery-service.password} # Don't use a default password in a real app
 
 eureka:
   client:
@@ -22,7 +22,7 @@ eureka:
     registerWithEureka: true
     fetchRegistry: true
     serviceUrl:
-      defaultZone: http://user:${eureka.password}@127.0.0.1:8762/eureka/
+      defaultZone: http://user:${discovery-service.password}@127.0.0.1:8762/discovery-service/
 
 ---
 spring:
@@ -35,7 +35,7 @@ eureka:
     nonSecurePort: ${server.port}
   client:
     serviceUrl:
-      defaultZone: http://user:${eureka.password}@127.0.1.1:8761/eureka/
+      defaultZone: http://user:${discovery-service.password}@127.0.1.1:8761/discovery-service/
 
 ---
 spring:
@@ -47,4 +47,4 @@ eureka:
     registerWithEureka: true
     fetchRegistry: true
     serviceUrl:
-      defaultZone: http://user:${eureka.password}@${PREFIX:}eureka.cfapps.io/eureka/
+      defaultZone: http://user:${discovery-service.password}@${PREFIX:}eureka.cfapps.io/discovery-service/
