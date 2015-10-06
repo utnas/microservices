@@ -11,6 +11,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/infrastructure" />
+            <option value="$PROJECT_DIR$/infrastructure/turbine-service" />
           </set>
         </option>
         <option name="useAutoImport" value="true" />
@@ -95,6 +96,20 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$/infrastructure/load-balance-service" />
+          </set>
+        </option>
+        <option name="useAutoImport" value="true" />
+      </GradleProjectSettings>
+      <GradleProjectSettings>
+        <option name="createEmptyContentRootDirectories" value="true" />
+        <option name="distributionType" value="LOCAL" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/infrastructure/turbine-service" />
+        <option name="gradleHome" value="C:/java/buildTools/gradle-2.3" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/infrastructure" />
+            <option value="$PROJECT_DIR$/infrastructure/turbine-service" />
           </set>
         </option>
         <option name="useAutoImport" value="true" />

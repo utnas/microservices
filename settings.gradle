@@ -18,4 +18,6 @@ include 'services:webservice'
 
 rootProject.name = 'microservices'
 include 'infrastructure'
+include 'infrastructure:turbine-service'
+findProject(':infrastructure:turbine-service')?.name = 'turbine-service'
 
