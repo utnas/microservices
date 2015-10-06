@@ -1,6 +1,6 @@
 spring:
   application:
-    name: Applications-Discovery-Service
+    name: applications-discovery-service
   cloud:
     config:
       uri: ${vcap.services.${PREFIX:}configserver.credentials.uri:http://user:password@localhost:8888}

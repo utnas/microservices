@@ -1,5 +1,5 @@
 info:
-  component: Authentication-Service
+  component: authentication-service
 
 endpoints:
   restart:

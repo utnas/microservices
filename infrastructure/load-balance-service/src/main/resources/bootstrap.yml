@@ -1,6 +1,6 @@
 spring:
   application:
-    name: Load-Balance-Service
+    name: load-balance-service
   cloud:
     config:
       uri: ${vcap.services.${PREFIX:}configserver.credentials.uri:http://user:password@localhost:8888}
