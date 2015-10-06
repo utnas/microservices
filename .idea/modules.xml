@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/infrastructure/discovery-service/discovery-service.iml" filepath="$PROJECT_DIR$/infrastructure/discovery-service/discovery-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/infrastructure/load-balance-service/load-balance-service.iml" filepath="$PROJECT_DIR$/infrastructure/load-balance-service/load-balance-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/microservices.iml" filepath="$PROJECT_DIR$/microservices.iml" />
+      <module fileurl="file://$PROJECT_DIR$/infrastructure/monitor-dashboard-service/monitor-dashboard-service.iml" filepath="$PROJECT_DIR$/infrastructure/monitor-dashboard-service/monitor-dashboard-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/composite/project-composite-service/project-composite-service.iml" filepath="$PROJECT_DIR$/composite/project-composite-service/project-composite-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/business/project-service/project-service.iml" filepath="$PROJECT_DIR$/business/project-service/project-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/business/room-service/room-service.iml" filepath="$PROJECT_DIR$/business/room-service/room-service.iml" />
