@@ -1,0 +1,56 @@
+apply plugin: 'java'
+apply plugin: 'idea'
+
+String mavenGroupId = 'com.teksystems'
+String mavenArtifactId = name
+
+
+group = mavenGroupId
+sourceCompatibility = '1.8'
+
+[compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
+
+repositories {
+        mavenCentral()
+        jcenter()
+}
+
+jar {
+    manifest {
+        attributes("Implementation-Title": mavenGroupId + ":" + mavenArtifactId,
+                "Implementation-Version": version)
+    }
+}
+
+dependencies {
+    // Adding dependencies here will add the dependencies to each subproject.
+    testCompile(
+            'junit:junit:4.12',
+            'org.mockito:mockito-all:1.10.19',
+            'org.powermock:powermock-module-junit4:1.6.2',
+            'org.powermock:powermock-api-mockito:1.6.2',
+    )
+
+    compile(
+            'commons-io:commons-io:2.4',
+            'commons-lang:commons-lang:2.6',
+            'commons-collections:commons-collections:3.2.1',            
+            'org.slf4j:slf4j-api:1.7.10'
+    )
+}
+
+task sourcesJar(type: Jar, dependsOn: classes, description: 'Creates a jar from the source files.') {
+    classifier = 'sources'
+    from sourceSets.main.allSource
+}
+
+artifacts {
+    archives jar
+    archives sourcesJar
+}
+
+// Gradle wrapper only needed once per installation
+task wrapper(type: Wrapper) {
+    gradleVersion = "2.2.1"
+}
+

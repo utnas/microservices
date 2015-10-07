@@ -1,28 +1,4 @@
-buildscript {
-    ext {
-        springBootVersion = '1.3.0.BUILD-SNAPSHOT'
-    }
-    repositories {
-        mavenCentral()
-        maven { url "https://repo.spring.io/snapshot" }
-        maven { url "https://repo.spring.io/milestone" }
-    }
-    dependencies {
-        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
-    }
-}
-
-apply plugin: 'java'
-apply plugin: 'eclipse'
-apply plugin: 'idea'
-apply plugin: 'spring-boot'
-apply plugin: 'maven-publish'
-
-repositories {
-    mavenCentral()
-    maven { url "https://repo.spring.io/snapshot" }
-    maven { url "https://repo.spring.io/milestone" }
-}
+apply from: rootProject.file('gradle/java.gradle')
 
 dependencies {
     compile("com.h2database:h2")
@@ -44,8 +20,4 @@ dependencies {
 jar {
     baseName = 'authentication-server'
     version = '001-SNAPSHOT'
-}
-
-task wrapper(type: Wrapper) {
-    gradleVersion = '2.3'
 }

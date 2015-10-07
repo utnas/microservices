@@ -1,36 +1,9 @@
-buildscript {
-    ext {
-        springBootVersion = '1.2.2.RELEASE'
-    }
-    repositories {
-        mavenCentral()
-    }
-    dependencies {
-        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
-    }
-}
-
-apply plugin: 'java'
-apply plugin: 'eclipse'
-apply plugin: 'idea'
-apply plugin: 'spring-boot'
+apply from: rootProject.file('gradle/java.gradle')
 
 jar {
     baseName = 'product-composite-service'
     version = '0.0.1-SNAPSHOT'
 }
-
-sourceCompatibility = 1.8
-targetCompatibility = 1.8
-
-repositories {
-    mavenLocal()
-    mavenCentral()
-    maven {
-        url 'http://maven.springframework.org/release'
-    }
-}
-
 
 dependencies {
     compile("org.springframework.boot:spring-boot-starter-web") {
@@ -48,8 +21,4 @@ dependencies {
     compile("microservices.room:room-service:0.0.1-SNAPSHOT")
 
     testCompile("org.springframework.boot:spring-boot-starter-test")
-}
-
-task wrapper(type: Wrapper) {
-    gradleVersion = '2.3'
 }

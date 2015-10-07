@@ -1,8 +1,11 @@
-/*
-// To declare projects as part of a multi-project build use the 'include' method
-include 'shared'
-include 'api'
-include 'services:webservice'
-*/
-
 rootProject.name = 'microservices'
+
+include "business:services:project"
+include "business:services:user"
+include "business:services:room"
+include "composite:services:project-composite"
+include "infrastructure:services:authentication"
+include "infrastructure:services:discovery"
+include "infrastructure:services:load-balance"
+include "infrastructure:services:monitor-dashboard"
+include "infrastructure:services:turbine"
