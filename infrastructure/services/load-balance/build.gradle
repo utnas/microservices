@@ -1,4 +1,4 @@
-group 'load-balance-service'
+group 'infrastructure.load-balance'
 version '1.0-SNAPSHOT'
 
 buildscript {

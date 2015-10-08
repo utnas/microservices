@@ -24,7 +24,7 @@ jar {
 publishing {
     publications {
         mavenJava(MavenPublication) {
-            groupId 'microservices.user'
+            groupId 'com.microservices.business'
             artifactId 'user-service'
             version '0.0.1-SNAPSHOT'
 

@@ -1,4 +1,4 @@
-group 'turbine-service'
+group 'infrastructure.turbine'
 version '1.0-SNAPSHOT'
 
 buildscript {

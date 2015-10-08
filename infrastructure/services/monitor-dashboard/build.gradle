@@ -1,4 +1,4 @@
-group 'monitor-dashboard-service'
+group 'infrastructure.monitor-dashboard'
 version '1.0-SNAPSHOT'
 
 buildscript {

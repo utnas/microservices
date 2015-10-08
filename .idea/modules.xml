@@ -13,7 +13,6 @@
       <module fileurl="file://$PROJECT_DIR$/composite/services/project-composite/project-composite.iml" filepath="$PROJECT_DIR$/composite/services/project-composite/project-composite.iml" />
       <module fileurl="file://$PROJECT_DIR$/business/services/room/room.iml" filepath="$PROJECT_DIR$/business/services/room/room.iml" />
       <module fileurl="file://$PROJECT_DIR$/infrastructure/services/turbine/turbine.iml" filepath="$PROJECT_DIR$/infrastructure/services/turbine/turbine.iml" />
-      <module fileurl="file://$PROJECT_DIR$/infrastructure/services/turbine/turbine-service.iml" filepath="$PROJECT_DIR$/infrastructure/services/turbine/turbine-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/business/services/user/user.iml" filepath="$PROJECT_DIR$/business/services/user/user.iml" />
     </modules>
   </component>

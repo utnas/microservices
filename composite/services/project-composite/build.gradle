@@ -39,9 +39,10 @@ dependencies {
     compile("org.springframework.cloud:spring-cloud-starter-bus-amqp:1.0.0.RELEASE")
     compile("org.springframework.cloud:spring-cloud-netflix-hystrix-amqp:1.0.0.RELEASE")
 
-    compile('microservices.project:project-service:0.0.1-SNAPSHOT')
-    compile('microservices.user:user-service:0.0.1-SNAPSHOT')
-    compile('microservices.room:room-service:0.0.1-SNAPSHOT')
+    /*compile('com.microservices.business:project-service:0.0.1-SNAPSHOT')
+    compile('com.microservices.business:user-service:0.0.1-SNAPSHOT')
+    compile('com.microservices.business:room-service:0.0.1-SNAPSHOT')
+    */
 
     testCompile("org.springframework.boot:spring-boot-starter-test")
 }
