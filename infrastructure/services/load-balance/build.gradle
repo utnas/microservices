@@ -1,4 +1,4 @@
-group 'infrastructure.load-balance'
+group 'com.microservices.infrastructure.load-balance'
 version '1.0-SNAPSHOT'
 
 buildscript {
@@ -20,7 +20,7 @@ apply plugin: 'spring-boot'
 apply plugin: 'maven-publish'
 
 jar {
-    baseName = 'load-balance-service'
+    baseName = 'load-balance'
     version = '0.0.1-SNAPSHOT'
 }
 

@@ -1,4 +1,4 @@
-group 'infrastructure.discovery'
+group 'com.microservices.infrastructure.discovery'
 version '1.0-SNAPSHOT'
 
 buildscript {
@@ -20,7 +20,7 @@ apply plugin: 'spring-boot'
 apply plugin: 'maven-publish'
 
 jar {
-    baseName = 'discovery-service'
+    baseName = 'discovery'
     version = '0.0.1-SNAPSHOT'
 }
 

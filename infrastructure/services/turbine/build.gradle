@@ -1,4 +1,4 @@
-group 'infrastructure.turbine'
+group 'com.microservices.infrastructure.turbine'
 version '1.0-SNAPSHOT'
 
 buildscript {
@@ -20,7 +20,7 @@ apply plugin: 'spring-boot'
 apply plugin: 'maven-publish'
 
 jar {
-    baseName = 'turbine-service'
+    baseName = 'turbine'
     version = '0.0.1-SNAPSHOT'
 }
 
