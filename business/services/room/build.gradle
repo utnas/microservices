@@ -26,10 +26,17 @@ publishing {
         mavenJava(MavenPublication) {
             groupId 'microservices.room'
             artifactId 'room-service'
-            version "0.0.1-SNAPSHOT"
+            version '0.0.1-SNAPSHOT'
 
             from components.java
         }
+    }
+}
+
+repositories {
+    mavenCentral()
+    maven {
+        url 'http://maven.springframework.org/release'
     }
 }
 
