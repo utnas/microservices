@@ -1,4 +1,4 @@
-group 'com.microservices.infrastructure.monitor-dashboard'
+group 'com.microservices.infrastructure'
 version '1.0-SNAPSHOT'
 
 buildscript {
@@ -27,6 +27,18 @@ repositories {
     mavenCentral()
     maven {
         url 'http://maven.springframework.org/release'
+    }
+}
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            groupId 'com.microservices.infrastructure'
+            artifactId 'monitor-dashboard'
+            version '0.0.1-SNAPSHOT'
+
+            from components.java
+        }
     }
 }
 

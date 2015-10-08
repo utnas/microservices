@@ -1,4 +1,4 @@
-group 'com.microservices.infrastructure.authentication'
+group 'com.microservices.infrastructure'
 version '1.0-SNAPSHOT'
 
 buildscript {
@@ -24,6 +24,17 @@ jar {
     version = '0.0.1-SNAPSHOT'
 }
 
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            groupId 'com.microservices.infrastructure'
+            artifactId 'authentication'
+            version '0.0.1-SNAPSHOT'
+
+            from components.java
+        }
+    }
+}
 
 repositories {
     mavenCentral()

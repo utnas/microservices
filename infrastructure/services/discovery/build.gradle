@@ -31,6 +31,18 @@ repositories {
     }
 }
 
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            groupId 'com.microservices.infrastructure'
+            artifactId 'discovery'
+            version '0.0.1-SNAPSHOT'
+
+            from components.java
+        }
+    }
+}
+
 dependencies {
     compile('org.springframework.boot:spring-boot-starter-web') {
         exclude module: 'spring-boot-starter-tomcat'

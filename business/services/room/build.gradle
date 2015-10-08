@@ -28,7 +28,7 @@ publishing {
     publications {
         mavenJava(MavenPublication) {
             groupId 'com.microservices.business'
-            artifactId 'room-service'
+            artifactId 'room'
             version '0.0.1-SNAPSHOT'
 
             from components.java
