@@ -17,6 +17,36 @@
       <profile default="true" name="Default" enabled="false">
         <processorPath useClasspath="true" />
       </profile>
+      <profile default="false" name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="authentication" />
+        <module name="authentication-service" />
+        <module name="discovery" />
+        <module name="load-balance" />
+        <module name="monitor-dashboard" />
+        <module name="project" />
+        <module name="project-composite" />
+        <module name="room" />
+        <module name="turbine" />
+        <module name="user" />
+      </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="authentication" target="1.5" />
+      <module name="authentication-service" target="1.5" />
+      <module name="com.microservices" target="1.5" />
+      <module name="discovery" target="1.5" />
+      <module name="load-balance" target="1.5" />
+      <module name="microservices" target="1.5" />
+      <module name="monitor-dashboard" target="1.5" />
+      <module name="project" target="1.5" />
+      <module name="project-composite" target="1.5" />
+      <module name="room" target="1.5" />
+      <module name="turbine" target="1.5" />
+      <module name="user" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>
